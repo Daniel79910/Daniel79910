@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Secundaria</title>
+    <link rel="stylesheet" href="csspagina2.css">
+</head>
+<body>
+    <header>
+        <h1>AGENDA</h1>
+    </header>
+<br>
+    <main>
+        <section>
+            <h3><a href="AgregarContacto.html">Agregar un contacto nuevo</a></h3>
+        </section>
+
+        <section>
+            <h3><a href="https://web.whatsapp.com/">Enviar mensajes por WhatsApp</a></h3>
+        </section>
+    </main>
+<br>
+    <main class="medio">
+        <section>
+            <button id="callButton">Realizar llamada</button>
+        </section>
+    </main>
+    <script>
+        document.getElementById('callButton').addEventListener('click', function() {
+            // Cambia este número al que desees marcar
+            var phoneNumber = '';
+            window.location.href = 'tel:' + phoneNumber;
+        });
+    </script>
+</body>
+</html>
